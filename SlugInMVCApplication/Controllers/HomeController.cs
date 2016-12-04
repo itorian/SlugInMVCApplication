@@ -5,14 +5,12 @@ namespace SlugInMVCApplication.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
             var model = QuestionExtension.GetQuestion();
             return View(model);
         }
 
-        // GET: Home
         public ActionResult Question(int id, string slug)
         {
             // call database table to get question based on input 'id'
