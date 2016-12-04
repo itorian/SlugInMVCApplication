@@ -1,0 +1,22 @@
+﻿@model SlugInMVCApplication.Models.Question
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Question</title>
+</head>
+<body>
+    <div> 
+        <h1>@Model.Title</h1>
+        <p>@Model.Details</p>
+        <br /><br />
+        <p>Note: remove slug from URL and press enter to test this.</p>
+    </div>
+</body>
+</html>

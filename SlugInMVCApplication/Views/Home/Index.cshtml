@@ -1,0 +1,26 @@
+﻿@model IEnumerable<SlugInMVCApplication.Models.Question>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List of questions</title>
+</head>
+<body>
+    <h1>List of questions</h1>
+    <div> 
+        Welcome to slug test page, please click on the question links below to test this. Notice, links will have just 'id' but it will take you to slug based url.
+    </div>
+    <div>
+        @foreach (var item in Model)
+        {
+            <p><a href="~/home/question/@item.Id" title="@item.Title">@item.Title</a></p>
+        }
+    </div>
+</body>
+</html>
